@@ -1,0 +1,54 @@
+initial
++   Arad 350
+
+
+pop Arab
+frontier:
++   Sibiu 372
++   Zerind 431
++   Timisoara 435
+
+
+pop Sibiu
+frontier:
++   Fagaras 393
++   Rimnicu 406
+    Zerind 431
++   Oradea 654
+    Timisoara 435
+
+
+pop Fagaras
+frontier:
+    Rimnicu 406
+    Timisoara 435
+    Zerind 431
+    Oradea 654
++   Bucharest 450
+
+
+pop Rimnicu
+frontier:
++   Pitesti 406
+    Timisoara 435
+    Zerind 431
+    Oradea 654
++   Craiova 518
+    Bucharest 450
+
+
+pop Pitesti
+update frontier Bucharest 450 -> 418
+frontier:
++   Pitesti 406
+    Timisoara 435
+    Zerind 431
+    Oradea 654
++   Craiova 518
+    Bucharest 418
+
+
+pop Bucharest
+reach goal
+
+

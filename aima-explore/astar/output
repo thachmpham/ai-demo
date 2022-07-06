@@ -1,0 +1,77 @@
+initial
+frontier [(350, <Node Arad>)]
+explored set()
+
+
+begin
+frontier [(350, <Node Arad>)]
+explored set()
+pop <Node Arad>
+append <Node Zerind>
+append <Node Sibiu>
+append <Node Timisoara>
+frontier [(372, <Node Sibiu>), (431, <Node Zerind>), (435, <Node Timisoara>)]
+explored {'Arad'}
+end
+
+
+begin
+frontier [(372, <Node Sibiu>), (431, <Node Zerind>), (435, <Node Timisoara>)]
+explored {'Arad'}
+pop <Node Sibiu>
+append <Node Fagaras>
+append <Node Oradea>
+append <Node Rimnicu>
+frontier [(393, <Node Fagaras>), (406, <Node Rimnicu>), (431, <Node Zerind>), (654, <Node Oradea>), (435, <Node Timisoara>)]
+explored {'Sibiu', 'Arad'}
+end
+
+
+
+begin
+frontier [(393, <Node Fagaras>), (406, <Node Rimnicu>), (431, <Node Zerind>), (654, <Node Oradea>), (435, <Node Timisoara>)]
+explored {'Sibiu', 'Arad'}
+pop <Node Fagaras>
+append <Node Bucharest>
+frontier [(406, <Node Rimnicu>), (435, <Node Timisoara>), (431, <Node Zerind>), (654, <Node Oradea>), (450, <Node Bucharest>)]
+explored {'Fagaras', 'Sibiu', 'Arad'}
+end
+
+
+
+
+
+begin
+frontier [(406, <Node Rimnicu>), (435, <Node Timisoara>), (431, <Node Zerind>), (654, <Node Oradea>), (450, <Node Bucharest>)]
+explored {'Fagaras', 'Sibiu', 'Arad'}
+pop <Node Rimnicu>
+append <Node Craiova>
+append <Node Pitesti>
+frontier [(406, <Node Pitesti>), (435, <Node Timisoara>), (431, <Node Zerind>), (654, <Node Oradea>), (518, <Node Craiova>), (450, <Node Bucharest>)]
+explored {'Rimnicu', 'Fagaras', 'Sibiu', 'Arad'}
+end
+
+
+
+
+begin
+frontier [(406, <Node Pitesti>), (435, <Node Timisoara>), (431, <Node Zerind>), (654, <Node Oradea>), (518, <Node Craiova>), (450, <Node Bucharest>)]
+explored {'Rimnicu', 'Fagaras', 'Sibiu', 'Arad'}
+pop <Node Pitesti>
+update
+delete <Node Bucharest>
+apend <Node Bucharest>
+frontier [(418, <Node Bucharest>), (431, <Node Zerind>), (654, <Node Oradea>), (518, <Node Craiova>), (435, <Node Timisoara>)]
+explored {'Sibiu', 'Fagaras', 'Rimnicu', 'Arad', 'Pitesti'}
+end
+
+
+
+
+
+begin
+frontier [(418, <Node Bucharest>), (431, <Node Zerind>), (654, <Node Oradea>), (518, <Node Craiova>), (435, <Node Timisoara>)]
+explored {'Sibiu', 'Fagaras', 'Rimnicu', 'Arad', 'Pitesti'}
+pop <Node Bucharest>
+goal <Node Bucharest>
+['Sibiu', 'Rimnicu', 'Pitesti', 'Bucharest']
